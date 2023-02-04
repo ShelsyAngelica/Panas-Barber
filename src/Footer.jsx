@@ -150,7 +150,7 @@ function Footer() {
 
                     <ul className="list-none mb-0">
                     <li>
-                        <a href="#!" className="text-white">Reserva</a>
+                        <a href="" className="text-white">Reserva</a>
                     </li>
                     
                     </ul>
