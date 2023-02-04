@@ -1,5 +1,6 @@
 import "./styles/Footer.css";
 import { Link } from "react-router-dom";
+import Logo from "./assets/Imagen1.png"
 import SweetAlert from 'sweetalert'
 
 function Footer() {
@@ -27,7 +28,7 @@ function Footer() {
                 width="100"
                 height="54"
                 alt="he"
-                src="/src/assets/Imagen1.png"
+                src={Logo}
             >
             </img>
         </div>

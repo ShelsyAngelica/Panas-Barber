@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import Menu from "./Menu";
 
+import Logo from "./assets/Imagen1.png"
+
 function Nav() {
 
   const [isOpen, setIsOpen] = useState (true)
@@ -23,7 +25,7 @@ function Nav() {
             width="100"
             height="54"
             alt="he"
-            src="/src/assets/Imagen1 - copia.png"
+            src={Logo}
           >
           </img>
         </Link>  
