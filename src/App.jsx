@@ -1,4 +1,3 @@
-import Nav from './Nav'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import CardTeam from './CardTeam';
 import Layout from './Layout';
