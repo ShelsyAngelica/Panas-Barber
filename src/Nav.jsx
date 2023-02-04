@@ -23,7 +23,7 @@ function Nav() {
             width="100"
             height="54"
             alt="he"
-            src="/src/assets/Imagen1.png"
+            src="/src/assets/Imagen1 - copia.png"
           >
           </img>
         </Link>  
