@@ -1,7 +1,20 @@
 import "./styles/Footer.css";
 import { Link } from "react-router-dom";
+import SweetAlert from 'sweetalert'
 
 function Footer() {
+
+    const showAlert = () => {
+        SweetAlert({
+            title:"Te haz suscrito",
+            text:"Recibiras toda nuestra informacion por correo",
+            icon:"success",
+            button:"OK"
+        })
+    }
+    const handleForm= event => {  
+        event.preventDefault();
+    }
 
     const handleClick = () =>{
         window.open('https://wa.me/573008552138?text=Hola%20vengo%20de%20la%20pagina%20web%2C%20deseo%20agendar%20una%20cita','_blank');
@@ -90,7 +103,7 @@ function Footer() {
             </div>
 
             <div>
-            <form action="">
+            <form onSubmit={handleForm}>
                 <div className="grid md:grid-cols-3 gird-cols-1 gap-4 flex justify-center items-center">
                 <div className="md:ml-auto md:mb-6">
                     <p className="">
@@ -123,7 +136,7 @@ function Footer() {
                 </div>
 
                 <div className="md:mr-auto mb-6">
-                    <button type="submit" className="inline-block px-6 py-2 border-2 border-white text-white font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
+                    <button onClick={()=>showAlert()} type="submit" className="inline-block px-6 py-2 border-2 border-white text-white font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
                     Suscribirme
                     </button>
                 </div>
@@ -145,12 +158,13 @@ function Footer() {
 
                 <div className="mb-6">
 
+                    <Link to="/servicios">
                     <ul className="list-none mb-0">
                     <li>
-                        <a href="#services" className="text-white">Servicios</a>
+                        <a href="" className="text-white">Servicios</a>
                     </li>
-                    
                     </ul>
+                    </Link>
                 </div>
 
                 <div className="mb-6">

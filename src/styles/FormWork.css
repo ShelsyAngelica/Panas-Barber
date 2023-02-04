@@ -1,0 +1,19 @@
+.container-FormWork{
+    margin: 20px 20px;
+    max-width: 1000px;
+}
+
+.container-button-FormWork{
+    display: flex;
+    justify-content: center;
+}
+.button-FormWork {
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 90px;
+}
+
+.button-FormWork:hover{
+    color: white;
+    background-color: black;
+}

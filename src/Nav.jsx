@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import Menu from "./Menu";
 
 function Nav() {
@@ -14,8 +15,10 @@ function Nav() {
 
   return (
     <div>
+      
       <nav className="flex items-center justify-between flex-wrap bg-black p-6 ">
         <div className="flex items-center flex-shrink-0 text-white mr-6">
+        <Link to="/">
           <img
             width="100"
             height="54"
@@ -23,6 +26,7 @@ function Nav() {
             src="/src/assets/Imagen1.png"
           >
           </img>
+        </Link>  
         </div>
         <div className="block lg:hidden">
           <button onClick={toggleOpen} className="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">

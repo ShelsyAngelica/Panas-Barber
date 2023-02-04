@@ -2,7 +2,7 @@ import "./styles/SectionService.css"
 
 function SectionService() {
   return (
-    <div id="services" className="bg-black">
+    <div className="bg-black">
         <div className="title-service">
             <h1 className="text-service font-bold text-center text-white">Conoce nuestros servicios</h1>
         </div>
